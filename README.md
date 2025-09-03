@@ -1,11 +1,11 @@
 
-# DevOps Shack User Management App
+# DevOps User Management App
 
 This is a full-stack application for managing users with a front-end built using HTML, CSS, and JavaScript, and a back-end powered by Node.js, Express, and MySQL.
 
 ## Table of Contents
 
-- [DevOps Shack User Management App](#devops-shack-user-management-app)
+- [DevOps User Management App](#devops-user-management-app)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Prerequisites](#prerequisites)
@@ -77,8 +77,6 @@ First, you need to set up a MySQL server on your local machine.
 
    ```bash
    sudo mysql -u root -p
-
-   
    ```
    Enter the password you set in the previous step.
 
@@ -127,14 +125,34 @@ The client side of the application is built using modern JavaScript, HTML, and C
 [install nodejs and npm](https://nodejs.org/en/download/)
 
    ```bash
-   npm install
+   npm install # both the server and client
+
+   export NVM_DIR="$HOME/.nvm"
+   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
    ```
+
+   ```sh
+38 packages are looking for funding
+  run `npm fund` for details
+
+6 vulnerabilities (4 moderate, 2 high)
+```
+fix
+```sh
+npm audit
+npm audit fix 
+
+npm audit fix --force
+```
+
 
 1. **Build the client application:**
 
-   ```bash
-   npm run build
-   ```
+```sh
+npm run build # only at client side
+```
 
    This will create a production build of the client application, which will be served by the Express server.
 
