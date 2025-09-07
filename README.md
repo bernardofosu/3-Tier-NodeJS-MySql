@@ -17,6 +17,7 @@ This is a full-stack application for managing users with a front-end built using
     - [User Management Features:](#user-management-features)
   - [License](#license)
     - [NOTE: This Application Should not be used for commercial purpose by anyone else other than DevOps Shack](#note-this-application-should-not-be-used-for-commercial-purpose-by-anyone-else-other-than-devops-shack)
+- [then: http://localhost:5000](#then-httplocalhost5000)
 
 ## Features
 
@@ -197,3 +198,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### NOTE: This Application Should not be used for commercial purpose by anyone else other than DevOps Shack
 
+docker compose up -d --build
+# then: http://localhost:5000
